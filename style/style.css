@@ -1,4 +1,4 @@
-html,body{
+html, body{
     min-height: 100%;
     color: lightgrey;
     font-size: 20px;
@@ -157,7 +157,7 @@ input{
 }
 
 .detale{
-    width: 85%;
+    width: 84%;
     height: 100%;
     text-align: left;
     margin-left: 6%;
@@ -213,4 +213,60 @@ input{
 
 #addicon{
     height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .bottommenu{
+        width: 100%;
+    }
+    
+    body, html{
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .zindex0{
+        height: 100%;
+    }
+    
+    .maincontent, .maxwysokosc{
+        height: 94vh;
+    }
+    
+    .maincontent{
+        width: 100vw;
+    }
+    
+    .detale{
+        margin-left: 5px;
+    }
+    
+    .zindex1{
+        width: 75vw;
+        height: 40vh;
+        top: 200px;
+    }
+    
+    .addform{
+        display: block;
+    }
+    
+    .textbox{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .dodajbutton{
+        padding: 6px;
+    }
+    
+    .dodajprodukt{
+        text-align: center;
+    }
+    
+    .dodajilosc{
+        text-align: center;
+    }
 }
