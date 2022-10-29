@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Easy Shopping List</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/showmenu.js"></script>
+</head>
+<body>
+    <div class="zindex0">
+        <div class="maincontent">
+
+            <div class="itemtemplate">
+                <div class="detale">
+                    <div class="cokupic">Mleko 2%, mlekowita</div>
+                    <div class="ilekupic">12 sztuk</div>
+                </div>
+                <div class="delete"><img class="deleteicon" src="img/delete.png"/></div>
+            </div>
+
+        </div>
+        <div class="bottommenu">
+            <div class="home"><img id="homeicon" src="img/home.png"/></div>
+            <div class="add"><img id="addicon" src="img/add.png" onclick="showmenu()" /></div>
+        </div>
+    </div>
+    
+    <div class="zindex1" id="addmenu">
+        <div class="addform">
+            <div class="spandodaj">Dodaj produkt do listy</div>
+            <div class="dodajprodukt">
+                Podaj produkt:
+                <input type="text" id="nowyprodukt" name="nowyprodukt" class="textbox">
+            </div>
+            <div class="dodajilosc">
+                Podaj ilość:
+                <input type="text" id="nowyilosc" name="nowyilosc" class="textbox">
+            </div>
+        </div>
+        <div class="opcjetaknie">
+            <div class="anuluj">
+                <button class="anulujbutton" onclick="hidemenu()">Anuluj</button>
+            </div>
+            <div class="dodaj">
+                <button class="dodajbutton">Dodaj wpis</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
