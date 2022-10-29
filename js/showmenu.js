@@ -13,7 +13,9 @@ function dodajhidemenu(){
     content += document.getElementById('nowyilosc').value;
     content += "</div></div><div class=\"delete\"><img class=\"deleteicon\" src=\"img/delete.png\"/></div></div>";
     
-    document.getElementById('maincontent').innerHTML += content;
+    for(let i = 0; i < 15; i++){
+        document.getElementById('maincontent').innerHTML += content;
+    }
     
     document.getElementById('nowyprodukt').value = "";
     document.getElementById('nowyilosc').value = "";

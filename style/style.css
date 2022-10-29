@@ -13,7 +13,7 @@ html {
 }
 
 .zindex1{
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     width: 600px;
     height: 250px;
@@ -25,11 +25,12 @@ html {
     margin-left: auto; 
     margin-right: auto;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear, z-index .2s 1s;
     font-family: "Lucida Console";
 }
 
 .visiblemenu{
+    z-index: 1;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;    
 }
@@ -112,6 +113,18 @@ input{
     text-align: center;
 }
 
+.maxwysokosc{
+    height: 800px;
+    max-height: 800px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.maxwysokosc::-webkit-scrollbar {
+    display: none;
+}
+
 .maincontent{
     display: table;
     border-top-left-radius: 12px;
@@ -119,11 +132,13 @@ input{
     background-color: rgba(29,30,50,1);
     width: 500px;
     height: 800px;
+    max-height: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     text-align: center;
     font-family: "Lucida Console";
+    overflow-y: scroll;
 }
 
 .itemtemplate{
